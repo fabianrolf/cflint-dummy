@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  cflint_test_job:
+    runs-on: ubuntu-latest
+    name: A job to test CFLint
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: CFLint
+        uses: ./ # Uses an action in the root directory
+        id: cflint-action
