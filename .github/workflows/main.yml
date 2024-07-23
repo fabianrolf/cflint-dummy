@@ -15,5 +15,5 @@ jobs:
           repository: fabianrolf/cflint-action
           ref: master
       - name: CFLint
-        uses: ./ # Uses an action in the root directory
+        uses: ./
         id: cflint-action
